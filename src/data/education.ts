@@ -9,14 +9,14 @@ export interface Education {
 
 export const education: Education[] = [
   {
-    institution: "Chulalongkorn University",
+    institution: "King Mongkut's Institute of Technology Ladkrabang",
     degree: "Bachelor of Engineering",
-    field: "Computer Engineering",
-    startYear: 2020,
-    endYear: 2024,
+    field: "Manufacturing System Engineering",
+    startYear: 2016,
+    endYear: 2020,
     highlights: [
-      "Focus on distributed systems and software architecture",
-      "Senior project: real-time data pipeline for IoT sensor networks",
+      "Cooperative project with SCG: LoRa-based fleet monitoring for mining operations",
+      "Pneumatic automation control system with MQTT and multi-device access",
     ],
   },
 ];
