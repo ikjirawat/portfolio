@@ -1,18 +1,20 @@
-import type { Profile } from "@/data/profile";
 import type { SkillCategory } from "@/data/skills";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 import SkillBadge from "@/components/ui/SkillBadge";
 
 interface AboutProps {
-  profile: Profile;
   skills: SkillCategory[];
 }
 
-export default function About({ profile, skills }: AboutProps) {
+export default function About({ skills }: AboutProps) {
   return (
     <SectionWrapper id="about" title="About">
       <p className="max-w-2xl text-base leading-7 text-[var(--text-muted)]">
-        {profile.tagline}
+        Bridging the gap between operational technology and information systems
+        across manufacturing and logistics. Experienced in MES, SCADA, and IoT
+        platforms — building solutions that connect factory-floor devices to
+        enterprise data layers using industrial protocols like OPC UA, Modbus,
+        and PROFINET.
       </p>
 
       <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
