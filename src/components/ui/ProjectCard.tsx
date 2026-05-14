@@ -17,7 +17,7 @@ interface ProjectCardProps {
 export default function ProjectCard({ project, featured }: ProjectCardProps) {
   return (
     <motion.div
-      className={`group rounded-xl border border-[var(--border)] bg-[var(--bg)] p-6 transition-all duration-200 hover:border-[var(--accent)] hover:shadow-lg ${
+      className={`group cursor-pointer rounded-xl border border-[var(--border)] bg-[var(--bg)] p-6 shadow-[var(--shadow)] transition-all duration-200 hover:border-[var(--accent)]/40 hover:shadow-md ${
         featured ? "sm:col-span-2" : ""
       }`}
       variants={fadeUp}
@@ -29,13 +29,13 @@ export default function ProjectCard({ project, featured }: ProjectCardProps) {
               {project.title}
             </h3>
             {project.featured && (
-              <span className="flex-shrink-0 rounded-full bg-[var(--accent)]/10 px-2.5 py-0.5 text-xs font-medium text-[var(--accent)]">
+              <span className="flex-shrink-0 rounded-full border border-[var(--accent)]/20 bg-[var(--accent)]/8 px-2.5 py-0.5 text-xs font-medium text-[var(--accent)]">
                 Featured
               </span>
             )}
           </div>
 
-          <p className={`mt-2 leading-relaxed text-[var(--text-muted)] ${featured ? "text-sm" : "text-sm"}`}>
+          <p className="mt-2 text-sm leading-7 text-[var(--text-muted)]">
             {project.description}
           </p>
 

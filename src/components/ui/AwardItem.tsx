@@ -21,7 +21,7 @@ export default function AwardItem({ award }: AwardItemProps) {
       </div>
       <p className="mt-0.5 text-sm text-[var(--accent)]">{award.issuer}</p>
       {award.description && (
-        <p className="mt-2 text-sm leading-relaxed text-[var(--text-muted)]">{award.description}</p>
+        <p className="mt-2 text-sm leading-7 text-[var(--text-muted)]">{award.description}</p>
       )}
     </motion.div>
   );

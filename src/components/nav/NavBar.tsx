@@ -58,9 +58,9 @@ export default function NavBar() {
               key={s.id}
               onClick={() => scrollTo(s.id)}
               aria-current={active === s.id ? "page" : undefined}
-              className={`rounded-md px-3 py-1.5 text-sm transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)] ${
+              className={`rounded-md px-3 py-1.5 text-sm transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)] ${
                 active === s.id
-                  ? "font-medium text-[var(--accent)]"
+                  ? "bg-[var(--accent)]/8 font-medium text-[var(--accent)]"
                   : "text-[var(--text-muted)] hover:text-[var(--text)]"
               }`}
             >

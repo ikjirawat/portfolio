@@ -22,7 +22,7 @@ export default function Hero({ profile }: HeroProps) {
   return (
     <section
       id="hero"
-      className="flex min-h-screen items-center justify-center px-4"
+      className="flex min-h-screen items-center justify-center bg-[var(--bg-subtle)] px-4"
     >
       <motion.div
         className="flex flex-col items-center text-center"
@@ -36,7 +36,7 @@ export default function Hero({ profile }: HeroProps) {
             alt={`${profile.name} profile photo`}
             width={160}
             height={160}
-            className="h-40 w-40 rounded-full border-4 border-[var(--border)] object-cover shadow-lg"
+            className="h-40 w-40 rounded-full border-4 border-[var(--bg)] object-cover shadow-lg ring-2 ring-[var(--border)]"
             priority
           />
         </motion.div>
@@ -49,14 +49,14 @@ export default function Hero({ profile }: HeroProps) {
         </motion.h1>
 
         <motion.p
-          className="mt-3 text-lg text-[var(--accent)]"
+          className="mt-3 text-lg font-medium text-[var(--accent)]"
           variants={fadeUp}
         >
           {profile.title}
         </motion.p>
 
         <motion.p
-          className="mt-2 max-w-md text-base text-[var(--text-muted)]"
+          className="mt-2 max-w-lg text-base leading-relaxed text-[var(--text-muted)]"
           variants={fadeUp}
         >
           {profile.tagline}
