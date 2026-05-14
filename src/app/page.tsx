@@ -26,7 +26,7 @@ export default function Home() {
       <NavBar />
       <main>
         <Hero profile={profile} />
-        <About profile={profile} skills={skills} />
+        <About skills={skills} />
         <Experience experience={experience} />
         <Projects projects={projects} />
         <Awards awards={awards} />
