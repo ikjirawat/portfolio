@@ -6,18 +6,18 @@ export interface SkillCategory {
 export const skills: SkillCategory[] = [
   {
     category: "Languages",
-    items: ["Python", "TypeScript", "Go", "SQL"],
+    items: ["C#", "C/C++", "Python", "SQL", "JavaScript", "HTML5/CSS"],
   },
   {
-    category: "Frameworks",
-    items: ["Next.js", "FastAPI", "React", "SvelteKit"],
+    category: "Industrial",
+    items: ["WinCC OA", "OPC UA", "Modbus", "PROFINET", "SCADA", "PLC"],
   },
   {
-    category: "Tools",
-    items: ["Git", "Docker", "PostgreSQL", "SQLite"],
+    category: "Tools & Frameworks",
+    items: ["Visual Studio", "WPF", ".NET", "Node-RED", "Platform IO", "SSRS"],
   },
   {
-    category: "Cloud",
-    items: ["Vercel", "Railway", "AWS", "GitHub Actions"],
+    category: "Protocols & IoT",
+    items: ["MQTT", "HTTP", "RTOS", "Edge Computing", "LoRa", "ESP32"],
   },
 ];

@@ -14,9 +14,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ik Jirawat — Software Engineer",
+  title: "Jirawat Wongmahasarn — MES Software Engineer",
   description:
-    "Personal portfolio of Ik Jirawat. Building reliable systems and clean interfaces.",
+    "Digital Manufacturing Specialist driving OT/IT integration, Industry 4.0 adoption, and smart automation.",
 };
 
 export default function RootLayout({
@@ -31,7 +31,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           {children}
         </ThemeProvider>
       </body>

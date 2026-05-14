@@ -10,10 +10,11 @@ export interface Profile {
 }
 
 export const profile: Profile = {
-  name: "Ik Jirawat",
-  title: "Software Engineer",
-  tagline: "Building reliable systems and clean interfaces.",
-  email: "IK_Jirawat@hotmail.com",
+  name: "Jirawat Wongmahasarn",
+  title: "MES Software Engineer",
+  tagline:
+    "Digital Manufacturing Specialist driving OT/IT integration, Industry 4.0 adoption, and smart automation across manufacturing and logistics.",
+  email: "jirawatwongmahasan@gmail.com",
   github: "https://github.com/ikjirawat",
   linkedin: "https://linkedin.com/in/ikjirawat",
   avatar: "/images/avatar.jpg",

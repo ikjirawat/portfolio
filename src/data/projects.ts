@@ -10,32 +10,34 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Forex Trading Bot",
+    title: "AIS IoT Platform SDK",
     description:
-      "Automated trading system with real-time signal generation, per-session strategy scheduling, and a live dashboard. Uses RSI/Bollinger Band mean-reversion with H1 trend filtering, ATR-based position sizing, and safety-critical risk management.",
-    tags: ["Python", "FastAPI", "SQLite", "WebSocket", "Tailwind"],
-    github: "https://github.com/ikjirawat/forex-bot",
+      "Device SDK and communication libraries enabling large-scale IoT connectivity with the AIS Magellan platform. MQTT and HTTP protocols for smart manufacturing and agriculture ecosystems.",
+    tags: ["C/C++", "MQTT", "HTTP", "IoT", "ESP32"],
     featured: true,
   },
   {
-    title: "Workout Planner",
+    title: "Airport BHS Control System",
     description:
-      "Progressive overload tracker with weekly program generation, exercise history charts, and session logging. Server-rendered for fast loads with offline-capable PWA support.",
-    tags: ["SvelteKit", "TypeScript", "PostgreSQL", "Tailwind"],
-    github: "https://github.com/ikjirawat/workout-planner",
+      "Real-time control and monitoring applications for international airport Baggage Handling Systems. .NET-based with MSSQL backend, deployed at Cairo International Airport.",
+    tags: ["C#", ".NET", "MSSQL", "SCADA", "WPF"],
   },
   {
-    title: "Portfolio",
+    title: "Factory IoT Dashboard",
     description:
-      "This site — statically generated with Next.js, dark/light theme, accessible navigation, and animated section transitions. Data-driven architecture: all content lives in TypeScript files, zero CMS dependency.",
-    tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
-    github: "https://github.com/ikjirawat/portfolio",
+      "End-to-end IoT monitoring system connecting machine-level sensors to real-time web dashboards. Multi-tasking firmware on ESP32/Arduino with SQL-backed analytics.",
+    tags: ["C/C++", "JavaScript", "HTML5", "SQL", "ESP32"],
   },
   {
-    title: "Oracle Fleet",
+    title: "LoRa Fleet Monitoring",
     description:
-      "Multi-agent AI orchestration system for software development. Specialized agents (backend, frontend, QA, PM) collaborate via structured protocols with persistent memory and inter-agent messaging.",
-    tags: ["TypeScript", "Claude API", "CLI", "MCP"],
-    github: "https://github.com/ikjirawat/bake-oracle",
+      "Real-time fleet tracking system for SCG mining operations using LoRa communication. C# visualization software (WPF) displaying live speed, location, and cycle time metrics.",
+    tags: ["C#", "WPF", "LoRa", "IoT"],
+  },
+  {
+    title: "Pneumatic Automation Control",
+    description:
+      "Remote PLC control system with MQTT integration enabling multi-device access from PC, tablet, and mobile. Early Industry 4.0 automation project.",
+    tags: ["C#", "MQTT", "PLC", "Automation"],
   },
 ];

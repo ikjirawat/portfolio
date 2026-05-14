@@ -37,10 +37,10 @@ export default function TimelineItem({ experience, isLast }: TimelineItemProps) 
         <p className="mt-0.5 text-sm font-medium text-[var(--accent)]">
           {experience.role}
         </p>
-        <ul className="mt-3 space-y-1.5">
+        <ul className="mt-3 space-y-2">
           {experience.highlights.map((h) => (
-            <li key={h} className="flex gap-2 text-sm leading-relaxed text-[var(--text-muted)]">
-              <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--border)]" />
+            <li key={h} className="flex gap-2 text-sm leading-7 text-[var(--text-muted)]">
+              <span className="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--accent)]/30" />
               {h}
             </li>
           ))}

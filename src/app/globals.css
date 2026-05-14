@@ -10,16 +10,20 @@
   --color-text: var(--text);
   --color-text-muted: var(--text-muted);
   --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
   --color-border: var(--border);
+  --shadow-card: var(--shadow);
 }
 
 :root {
   --bg: #ffffff;
-  --bg-subtle: #f8f9fa;
-  --text: #111827;
-  --text-muted: #6b7280;
-  --accent: #0ea5e9;
-  --border: #e5e7eb;
+  --bg-subtle: #f8fafc;
+  --text: #0f172a;
+  --text-muted: #475569;
+  --accent: #1d4ed8;
+  --accent-hover: #1e40af;
+  --border: #e2e8f0;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
 }
 
 .dark {
@@ -27,8 +31,10 @@
   --bg-subtle: #1e293b;
   --text: #f1f5f9;
   --text-muted: #94a3b8;
-  --accent: #38bdf8;
+  --accent: #60a5fa;
+  --accent-hover: #93bbfd;
   --border: #334155;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 body {

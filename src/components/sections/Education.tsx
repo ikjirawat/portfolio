@@ -42,10 +42,10 @@ export default function Education({ education }: EducationProps) {
               {edu.startYear} – {edu.endYear}
             </p>
             {edu.highlights && edu.highlights.length > 0 && (
-              <ul className="mt-3 space-y-1.5">
+              <ul className="mt-3 space-y-2">
                 {edu.highlights.map((h) => (
-                  <li key={h} className="flex gap-2 text-sm leading-relaxed text-[var(--text-muted)]">
-                    <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--border)]" />
+                  <li key={h} className="flex gap-2 text-sm leading-7 text-[var(--text-muted)]">
+                    <span className="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--accent)]/30" />
                     {h}
                   </li>
                 ))}

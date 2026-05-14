@@ -11,19 +11,17 @@ interface AboutProps {
 export default function About({ profile, skills }: AboutProps) {
   return (
     <SectionWrapper id="about" title="About">
-      <p className="max-w-2xl text-base leading-relaxed text-[var(--text-muted)]">
-        {profile.tagline} Focused on building systems that are reliable,
-        maintainable, and performant — from automated trading pipelines to
-        full-stack web applications.
+      <p className="max-w-2xl text-base leading-7 text-[var(--text-muted)]">
+        {profile.tagline}
       </p>
 
-      <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {skills.map((cat) => (
           <div key={cat.category}>
-            <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-[var(--text)]">
+            <h3 className="mb-3 text-xs font-semibold uppercase tracking-widest text-[var(--accent)]">
               {cat.category}
             </h3>
-            <div className="flex flex-wrap gap-1.5">
+            <div className="flex flex-wrap gap-2">
               {cat.items.map((item) => (
                 <SkillBadge key={item} label={item} />
               ))}
